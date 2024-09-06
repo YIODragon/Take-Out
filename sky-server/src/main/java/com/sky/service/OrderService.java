@@ -80,4 +80,22 @@ public interface OrderService {
      * @param ordersRejectionDTO
      */
     void rejection(OrdersRejectionDTO ordersRejectionDTO);
+
+    /**
+     * 取消订单
+     * @param ordersCancelDTO
+     */
+    void cancel(OrdersCancelDTO ordersCancelDTO);
+
+    /**
+     * 管理端订单派送
+     * @param id
+     */
+    void delivery(Long id);
+
+    /**
+     * 订单完成
+     * @param id
+     */
+    void complete(Long id);
 }
